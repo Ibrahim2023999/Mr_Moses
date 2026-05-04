@@ -2270,8 +2270,9 @@
             }
 
             .then-now-container {
-                flex-direction: column;
-                gap: 40px;
+                flex-direction: row;
+                gap: 20px;
+                align-items: center;
             }
 
             .then-now-container::before {
@@ -2279,21 +2280,25 @@
             }
 
             .then-now-card {
-                max-width: 280px;
+                max-width: 160px;
+                flex: 1;
             }
 
             .then-now-frame {
-                max-height: 320px;
+                max-height: 200px;
             }
 
             .then-now-connector {
-                order: -1;
-                margin-bottom: 20px;
+                flex-shrink: 0;
             }
 
             .then-now-connector-icon {
-                width: 50px;
-                height: 50px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .then-now-connector-icon::before {
+                font-size: 14px;
             }
         }
 
@@ -2302,12 +2307,25 @@
                 font-size: 1.7rem;
             }
 
+            .then-now-container {
+                gap: 12px;
+            }
+
             .then-now-card {
-                max-width: 240px;
+                max-width: 140px;
             }
 
             .then-now-frame {
-                max-height: 280px;
+                max-height: 180px;
+            }
+
+            .then-now-connector-icon {
+                width: 32px;
+                height: 32px;
+            }
+
+            .then-now-connector-icon::before {
+                font-size: 12px;
             }
         }
 
